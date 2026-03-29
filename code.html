@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LENS | Cinematic Vision</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"secondary-container": "#2e3c4e", "on-error": "#490106", "on-secondary": "#122131", "on-primary-container": "#ced1d2", secondary: "#909fb4", "on-primary-fixed-variant": "#595c5e", "secondary-dim": "#909fb4", "on-tertiary-container": "#455367", "surface-variant": "#0a2257", "secondary-fixed": "#d4e4fa", "inverse-on-surface": "#4f5469", "primary-fixed-dim": "#d2d5d7", "surface-dim": "#070d1f", "surface-container-highest": "#0a2257", primary: "#c4c7c9", "surface-tint": "#c4c7c9", "on-primary": "#3d4142", "tertiary-container": "#d5e3fd", "on-secondary-fixed": "#324052", "secondary-fixed-dim": "#c6d6ec", "surface-container-low": "#09122b", "on-secondary-container": "#b1c0d6", "inverse-surface": "#faf8ff", background: "#070d1f", "on-background": "#dfe4ff", "surface-container-high": "#0b1d48", surface: "#070d1f", error: "#ee7d77", "on-error-container": "#ff9993", "primary-dim": "#b6b9bb", "inverse-primary": "#5c5f61", "on-secondary-fixed-variant": "#4e5d6f", "surface-bright": "#082768", outline: "#6073ad", "surface-container": "#0a1839", "on-tertiary-fixed": "#324054", "error-dim": "#bb5551", "surface-container-lowest": "#000000", "on-tertiary-fixed-variant": "#4e5c71", "tertiary-fixed": "#d5e3fd", "on-primary-fixed": "#3c4042", "error-container": "#7f2927", tertiary: "#ebf1ff", "on-surface-variant": "#96a9e6", "on-tertiary": "#4d5b70", "tertiary-fixed-dim": "#c7d5ee", "tertiary-dim": "#c7d5ee", "primary-fixed": "#e0e3e5", "outline-variant": "#32457c", "primary-container": "#444749", "on-surface": "#dfe4ff"}, fontFamily: {headline: ["Manrope"], body: ["Inter"], label: ["Inter"], display: "Manrope"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}}}};</script>
+<style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="font-body">
+<!-- Full Screen Background Video -->
+<div class="video-container">
+<video autoplay="" loop="" muted="" playsinline="">
+<source src="https://www.dropbox.com/scl/fi/3bipese3jysb33ubzfd24/y0p3z9yp85rmw0cx7dhvg4sr38.mp4?rlkey=zubv20fabn8yhqa1gzmra3va8&amp;st=patuhujw&amp;dl=1" type="video/mp4"/>
+</video>
+</div>
+</body></html>
